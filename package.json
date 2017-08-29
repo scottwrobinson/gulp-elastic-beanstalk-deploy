@@ -1,0 +1,50 @@
+{
+  "name": "gulp-elastic-beanstalk-deploy",
+  "version": "0.0.1",
+  "description": "A Gulp module for deploying to AWS Elastic Beanstalk",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottwrobinson/gulp-elastic-beanstalk-deploy.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp-plugin",
+    "gulp-module",
+    "amazon",
+    "aws",
+    "eb",
+    "elastic",
+    "beanstalk",
+    "elasticbeanstalk",
+    "deploy"
+  ],
+  "author": "Scott Robinson <s.w.robinson@gmail.com>",
+  "contributors": [
+    {
+      "name": "Scott Robinson",
+      "email": "s.w.robinson@gmail.com"
+    },
+    {
+      "name": "Seungjae Lee",
+      "email": "seungjae@dable.io",
+      "url": "http://a0ly.github.io/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottwrobinson/gulp-elastic-beanstalk-deploy/issues"
+  },
+  "homepage": "https://github.com/scottwrobinson/gulp-elastic-beanstalk-deploy#readme",
+  "dependencies": {
+    "aws-sdk": "^2.3.16",
+    "chai": "^4.1.0",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.13.1",
+    "mocha": "^3.0.2",
+    "q": "^1.4.1"
+  }
+}
