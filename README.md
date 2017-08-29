@@ -12,16 +12,16 @@ _Based on [gulp-beanstalk-deploy](https://github.com/a0ly/gulp-beanstalk-deploy)
 You can install plugin by this command:
 
 ```shell
-npm install gulp-elastic-beanstalk-deploy
+$ npm install gulp-elastic-beanstalk-deploy
 ```
 
 ## Overview
 
 ```javascript
 gulp.task('deploy', function(cb) {
-  eb({
-    // options here
-  }, cb)
+    eb({
+        // options here
+    }, cb)
 });
 ```
 
@@ -87,32 +87,32 @@ Interval time to check deploying status. (sec)
 * Default:
 ```javascript
 {
-    bucket: // applicationName
-    key: // sourceBundle basename
+    bucket: '',    // applicationName
+    key: ''        // sourceBundle basename
 }
 ```
 
 ##### sourceBundle *
 * Type: `string`
 
-archive file path to upload. It must exists in your local file system, which means the archive file must be prepared before deployment task.
+Archive file path to upload. It must exists in your local file system, which means the archive file must be prepared before deployment task.
 
 ## Usage Example
 ``` javascript
-var gulp = require('gulp');
-var eb = require('gulp-elastic-beanstalk-deploy');
+const gulp = require('gulp');
+const eb = require('gulp-elastic-beanstalk-deploy');
 
 gulp.task('deploy', function(cb) {
-  eb({
-    accessKeyId: 'Your AWS accessKeyId', // optional
-    secretAccessKey: 'Your AWS secretAccessKey', // optional
-    region: 'us-west-1', // required
-    applicationName:'gulp-elastic-beanstalk-deploy',
-    environmentName: 'gulp-elastic-beanstalk-deploy-env',
-    versionLabel: '1.0.0',
-    sourceBundle: './archive.zip',
-    description: 'description here'
-  }, cb);
+    eb({
+        accessKeyId: 'YOUR-AWS-ACCESS-KEY-ID', // optional
+        secretAccessKey: 'YOUR-AWS-SECRET-ACCESS-KEY', // optional
+        region: 'YOUR-REGION', // required
+        applicationName:'my-eb-app',
+        environmentName: 'my-eb-env',
+        versionLabel: '1.0.0',
+        sourceBundle: './archive.zip',
+        description: 'Description here'
+    }, cb);
 });
 ```
 
