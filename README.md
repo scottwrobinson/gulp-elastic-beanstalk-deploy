@@ -29,6 +29,12 @@ gulp.task('deploy', function(cb) {
 
 A * indicates a mandatory option.
 
+##### profile
+
+* Type: `string`
+
+The AWS profile to use. This refers to an IAM user with credentials in the `~/.aws/credentials` file.
+
 ##### accessKeyId
 
 * Type: `string`
@@ -104,6 +110,7 @@ const eb = require('gulp-elastic-beanstalk-deploy');
 
 gulp.task('deploy', function(cb) {
     eb({
+        profile: 'YOUR-IAM-USER', // optional
         accessKeyId: 'YOUR-AWS-ACCESS-KEY-ID', // optional
         secretAccessKey: 'YOUR-AWS-SECRET-ACCESS-KEY', // optional
         region: 'YOUR-REGION', // required
