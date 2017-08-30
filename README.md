@@ -3,7 +3,7 @@ gulp-elastic-beanstalk-deploy
 
 > A Gulp module for deploying to AWS Elastic Beanstalk
 
-This plugin helps you to integrate your deployment task on the Amazon AWS Elasticbeanstalk service into gulp. Your deployment job will be more mainatainable and efficient, so that you can increase productivity.
+This plugin helps you to integrate your deployment task on the Amazon AWS Elastic Beanstalk service into gulp. Your deployment job will be more mainatainable and efficient, so that you can increase productivity.
 
 _Based on [gulp-beanstalk-deploy](https://github.com/a0ly/gulp-beanstalk-deploy) by SeungJae Lee._
 
@@ -40,14 +40,14 @@ The AWS profile to use. This refers to an IAM user with credentials in the `~/.a
 * Type: `string`
 * Default: `~/.aws/credentials`
 
-The aws access key id. If nothing passwed, it will use your local aws profile credential.
+The AWS access key id. If nothing is passed, it will use your local AWS profile credential.
 
 ##### secretAccessKey
 
 * Type: `string`
 * Default: `~/.aws/credentials`
 
-The aws access secret access key. If nothing passwed, it will use your local aws profile credential.
+The AWS access secret access key. If nothing is passed, it will use your local AWS profile credential.
 
 ##### region *
 * Type: `string`
