@@ -103,6 +103,12 @@ Interval time to check deploying status. (sec)
 
 Archive file path to upload. It must exists in your local file system, which means the archive file must be prepared before deployment task.
 
+##### uploadOnly
+* Type: `boolean`
+* Default: false
+
+Used if you want to upload a package to the application without deploying to an environment. 
+
 ## Usage Example
 ``` javascript
 const gulp = require('gulp');

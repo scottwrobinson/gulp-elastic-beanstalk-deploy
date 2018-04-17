@@ -9,8 +9,16 @@ module.exports = function(opts, cb) {
     awsWrapper.upload(sets).then(function() {
         return awsWrapper.createApplicationVersion(sets);
     }).then(function(version) {
+        if (opts.uploadOnly) {
+            return;
+        }
+
         return awsWrapper.updateEnvironment(sets, version);
     }).then(function(result) {
+        if (opts.uploadOnly) {
+            return result;
+        }
+
         if (opts.waitForDeploy === undefined || opts.waitForDeploy === null) {
             opts.waitForDeploy = true;
         }
