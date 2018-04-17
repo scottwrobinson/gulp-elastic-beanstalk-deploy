@@ -1,2 +1,6 @@
 node_modules/
 
+workspace.xml
+vcs.xml
+modules.xml
+gulp-elastic-beanstalk-deploy.iml
